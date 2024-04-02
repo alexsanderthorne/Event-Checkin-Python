@@ -6,9 +6,9 @@ db_connection_handler.connect_to_db()
 
 def test_insert_event():
     event = {
-        "uuid": "meu-uuid-e-noisss",
-        "title": "meu titless",
-        "slug": "meu-slug-aquiss!",
+        "uuid": "meu-uuid-e-noissses",
+        "title": "meu titlesses",
+        "slug": "meu-slug-aquisses!",
         "maximum_attendees": 20
     }
 
