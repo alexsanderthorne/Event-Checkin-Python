@@ -6,9 +6,9 @@ db_connection_handler.connect_to_db()
 
 def test_insert_event():
     event = {
-        "uuid": "meu-uuid-e-noissses",
-        "title": "meu titlesses",
-        "slug": "meu-slug-aquisses!",
+        "uuid": "meu-uuid-e-nois2",
+        "title": "meu title",
+        "slug": "meu-slug-aqui!2",
         "maximum_attendees": 20
     }
 
@@ -17,8 +17,8 @@ def test_insert_event():
     print(response)
 
 def test_get_event_by_id():
-    event_id = "meu-uuid-e-nois2"
+    event_id = "meu-uuid-e-noisfgsdg2"
     events_repository = EventsRepository()
     response = events_repository.get_event_by_id(event_id)
     print(response)
-    print(response.title)
+    #print(response.title)

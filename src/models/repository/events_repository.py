@@ -1,12 +1,13 @@
 from typing import Dict
 from src.models.settings.connection import db_connection_handler
 from src.models.entities.events import Events
-
-db_connection_handler.connect_to_db
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm.exc import NoResultFound
 
 class EventsRepository:
     def insert_event(self, eventsInfo: Dict) -> Dict:
         with db_connection_handler as database:
+            try:
                 event = Events(
                     id=eventsInfo.get("uuid"),
                     title=eventsInfo.get("title"),
@@ -18,9 +19,15 @@ class EventsRepository:
                 database.session.commit()
 
                 return eventsInfo
-            
+            except IntegrityError:
+                raise Exception('Evento ja cadastrado!')
+            except Exception as exception:
+                database.session.rollback()
+                raise exception
+
     def get_event_by_id(self, event_id: str) -> Events:
         with db_connection_handler as database:
+            try:
                 event = (
                     database.session
                         .query(Events)
@@ -28,3 +35,5 @@ class EventsRepository:
                         .one()
                 )
                 return event
+            except NoResultFound:
+                return None
