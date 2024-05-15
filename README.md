@@ -70,7 +70,8 @@ Desenvolvedor apaixonado por tecnologia e entusiasta de código aberto.
 
 ** Licença:**
 
-Este projeto é licenciado sob a licença MIT. Para mais informações, consulte o arquivo LICENSE.
+Este projeto é licenciado sob a licença BSD 3-Clause License. Para mais informações, consulte o arquivo LICENSE.
+Copyright (c) 2024, Alexsander Araujo
 
 ** Contribua!**
 
