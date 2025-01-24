@@ -65,7 +65,7 @@ Alexsander Araujo
 
 Desenvolvedor apaixonado por tecnologia e entusiasta de código aberto.
 
-    LinkedIn: https://www.linkedin.com/in/alexsander-ara%C3%BAjo-a71659181/
+    LinkedIn: https://www.linkedin.com/in/alexsanderaraujo4/
     Instagram: https://www.instagram.com/alexsanderaraujo4/
 
 ** Licença:**
